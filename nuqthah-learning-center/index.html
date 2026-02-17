@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description"
+    content="Nuqthah Learning Center — E-learning Muqarrar yang fleksibel, jelas, dan mudah diakses kapan saja." />
+  <title>Nuqthah Learning</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Announcement bar -->
+  <div class="topbar" role="status" aria-label="Pengumuman">
+    <div class="container topbar__inner">
+      <span class="pill">INFO</span>
+      <span class="topbar__text">PROGRAM ANGKATAN BARU: Coming Soon — Maret 2026</span>
+      <a class="topbar__cta" href="#produk">Lihat Paket</a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="beranda">
+    <div class="container header__inner">
+      <a class="brand" href="#beranda" aria-label="Nuqthah Learning Center">
+        <span class="logo" aria-hidden="true">
+          <!-- Simple inline SVG logo -->
+          <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="2" width="38" height="38" rx="12" fill="url(#g)" />
+            <path
+              d="M21 11.5c-4.7 0-8.5 3.8-8.5 8.5S16.3 28.5 21 28.5 29.5 24.7 29.5 20 25.7 11.5 21 11.5Zm0 14.1a5.6 5.6 0 1 1 0-11.2 5.6 5.6 0 0 1 0 11.2Z"
+              fill="white" opacity=".92" />
+            <circle cx="28.8" cy="28.7" r="2.7" fill="white" opacity=".92" />
+            <defs>
+              <linearGradient id="g" x1="2" y1="2" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#0EA5A4" />
+                <stop offset="1" stop-color="#F59E0B" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </span>
+        <span class="brand__text">
+          <span class="brand__name">Nuqthah</span>
+          <span class="brand__sub">Learning</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Navigasi utama">
+        <a href="#beranda">Beranda</a>
+        <a href="#fitur">Fitur</a>
+        <a href="#produk">Paket</a>
+        <a href="#testimoni">Testimoni</a>
+        <a href="#faq">FAQ</a>
+        <a href="#kontak">Kontak</a>
+        <a href="#daftar" class="btn btn--sm">Checkout</a>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="Buka menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile" id="mobileMenu" aria-hidden="true">
+      <div class="container mobile__inner">
+        <a href="#beranda" class="mobile__link">Beranda</a>
+        <a href="#fitur" class="mobile__link">Fitur</a>
+        <a href="#produk" class="mobile__link">Paket</a>
+        <a href="#testimoni" class="mobile__link">Testimoni</a>
+        <a href="#faq" class="mobile__link">FAQ</a>
+        <a href="#kontak" class="mobile__link">Kontak</a>
+        <a href="#checkout" class="btn">Checkout</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="blob blob--a"></div>
+        <div class="blob blob--b"></div>
+        <div class="pattern"></div>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="kicker reveal">#SemuaBisaMumtaz</p>
+          <h1 class="reveal delay-1">Belajar Kitab & Muqarrar terasa <span class="grad">lebih ringan</span> — kapan pun,
+            di mana pun.</h1>
+          <p class="lead reveal delay-2">
+            Nuqthah Learning adalah program bimbingan berbasis e-learning.
+            Materi dikemas dalam video ringkas, jelas, dan bisa kamu ulang 24/7.
+          </p>
+
+          <div class="hero__actions reveal delay-3">
+            <a class="btn" href="#checkout">Bayar / Checkout</a>
+            <a class="btn btn--ghost" href="#fitur">Lihat Fitur</a>
+          </div>
+
+          <div class="stars reveal delay-4" aria-label="Rating">
+            <div class="stars__row" aria-hidden="true">
+              ★★★★★
+            </div>
+            <span class="stars__text">100 peserta sudah mengikuti bimbel di nuqthah-learning</span>
+          </div>
+        </div>
+
+        <div class="hero__card reveal delay-2" aria-label="Kartu highlight">
+          <div class="heroCard">
+            <div class="heroCard__top">
+              <span class="chip">E-Learning</span>
+              <span class="chip chip--alt">Muqarrar</span>
+            </div>
+
+            <div class="heroCard__mid">
+              <h3>Belajar Fleksibel</h3>
+              <p>Materi termin dua belum tersedia, akan tersedia pada bulan maret 2026.</p>
+            </div>
+
+            <div class="heroCard__stats">
+              <div class="mini">
+                <div class="mini__num" data-count="0">0</div>
+                <div class="mini__lbl">materi</div>
+              </div>
+              <div class="mini">
+                <div class="mini__num" data-count="0">0</div>
+                <div class="mini__lbl">Batch Video</div>
+              </div>
+              <div class="mini">
+                <div class="mini__num" data-count="0">0</div>
+                <div class="mini__lbl">Peserta 2026</div>
+              </div>
+            </div>
+
+            <div class="heroCard__cta">
+              <a class="btn btn--sm" href="https://wa.me/6285185409887">Mulai Sekarang</a>
+              <span class="muted">Akses materi 24/7</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="tentang">
+      <div class="container grid2">
+        <div class="reveal">
+          <h2>Kenalan yuk, sama Nuqthah Learning!</h2>
+          <p class="muted">
+            Kami bantu kamu belajar lebih terstruktur: video pembelajaran yang bisa diulang,
+            ringkasan yang mudah dipahami, dan quiz untuk mengukur pemahaman.
+          </p>
+
+          <div class="stats">
+            <div class="statCard reveal delay-1">
+              <div class="statCard__num" data-count="3">0</div>
+              <div class="statCard__lbl">Pengajar berpengalaman</div>
+            </div>
+            <div class="statCard reveal delay-2">
+              <div class="statCard__num" data-count="100">0</div>
+              <div class="statCard__lbl">Peserta 2024–2025</div>
+            </div>
+            <div class="statCard reveal delay-3">
+              <div class="statCard__num" data-count="2">0</div>
+              <div class="statCard__lbl">materi 2024-2025</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cardStack reveal delay-2" aria-hidden="true">
+          <div class="stack stack--1"></div>
+          <div class="stack stack--2"></div>
+          <div class="stack stack--3 videoStack">
+            <div class="stack__badge">
+              <div class="stack__title">Audio visual menarik</div>
+              <div class="stack__sub">Belajar terasa lebih “nempel”.</div>
+            </div>
+
+            <div class="videoWrap" aria-label="Video pembelajaran">
+              <iframe src="https://www.youtube.com/embed/mHDElOfCs4w?si=BGoo9T73vuMAP5sL"
+                title="Nuqthah Learning Center — Video" frameborder="0" loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section section--alt" id="fitur">
+      <div class="container">
+        <div class="sectionHead reveal">
+          <h2>Kenapa belajar di Nuqthah?</h2>
+          <p class="muted">Fokus ke yang bikin kamu paham: konten jelas, ritme fleksibel, dan evaluasi cepat.</p>
+        </div>
+
+        <div class="features">
+          <article class="feature reveal">
+            <div class="feature__icon" aria-hidden="true">⏱</div>
+            <h3>Akses Video 24/7</h3>
+            <p>Ulang materi kapan pun—sebelum kuliah, setelah talaqqi, atau pas senggang.</p>
+          </article>
+
+          <article class="feature reveal delay-1">
+            <div class="feature__icon" aria-hidden="true">🎓</div>
+            <h3>Pengajar Berpengalaman</h3>
+            <p>Penjelasan ringkas, sistematis, dan dekat dengan kebutuhan ujian.</p>
+          </article>
+
+          <article class="feature reveal delay-2">
+            <div class="feature__icon" aria-hidden="true">📝</div>
+            <h3>Rangkuman Arab–Indonesia</h3>
+            <p>Untuk bantu pemahaman inti dan mempercepat review sebelum ujian.</p>
+          </article>
+
+          <article class="feature reveal">
+            <div class="feature__icon" aria-hidden="true">✅</div>
+            <h3>Quiz Digital</h3>
+            <p>Latihan soal singkat untuk cek pemahaman, dengan pembahasan inti.</p>
+          </article>
+
+          <article class="feature reveal delay-1">
+            <div class="feature__icon" aria-hidden="true">💬</div>
+            <h3>Grup Diskusi</h3>
+            <p>Diskusi bareng pengajar dan teman seangkatan biar makin mantap.</p>
+          </article>
+
+          <article class="feature reveal delay-2">
+            <div class="feature__icon" aria-hidden="true">📱</div>
+            <h3>Mobile Friendly</h3>
+            <p>Nyaman di HP maupun laptop—tinggal buka, belajar, dan lanjut aktivitas.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Produk / Paket -->
+    <section class="section" id="produk">
+      <div class="container">
+        <div class="sectionHead reveal">
+          <h2>Pilih Paket Belajar</h2>
+          <p class="muted">Harga ditampilkan dalam Rupiah (IDR). Kamu bisa checkout langsung dari website ini.</p>
+        </div>
+
+        <div class="pricing">
+          <article class="priceCard reveal">
+            <div class="priceCard__top">
+              <h3>Free Trial</h3>
+              <div class="priceCard__price"><span class="cur">IDR</span> <span class="amt">0</span></div>
+              <p class="muted">Akses contoh materi + quiz demo.</p>
+            </div>
+            <ul class="priceCard__list">
+              <li>Video contoh (ringkas)</li>
+              <li>Rangkuman 1 bab</li>
+              <li>Quiz demo</li>
+            </ul>
+            <button class="btn priceCard__btn" data-package="Free Trial" data-price="0">Mulai Trial</button>
+          </article>
+
+          <article class="priceCard priceCard--featured reveal delay-1" aria-label="Paket paling populer">
+            <div class="badge">Paling Populer</div>
+            <div class="priceCard__top">
+              <h3>Muqarrar Termin 1</h3>
+              <div class="priceCard__price"><span class="cur">IDR</span> <span class="amt">90.000</span></div>
+              <p class="muted">Buat persiapan ujian — fokus materi inti.</p>
+            </div>
+            <ul class="priceCard__list">
+              <li>Batch video termin 1</li>
+              <li>Rangkuman Arab–Indonesia</li>
+              <li>Quiz digital + pembahasan inti</li>
+              <li>Akses 24/7 selama masa program</li>
+            </ul>
+            <button class="btn priceCard__btn" data-package="Muqarrar Termin 1" data-price="90000">Checkout
+              Paket</button>
+          </article>
+
+          <article class="priceCard reveal delay-2">
+            <div class="priceCard__top">
+              <h3>Bundle Termin 1–2</h3>
+              <div class="priceCard__price"><span class="cur">IDR</span> <span class="amt">150.000</span></div>
+              <p class="muted">Lebih hemat untuk yang mau lanjut termin berikutnya.</p>
+            </div>
+            <ul class="priceCard__list">
+              <li>Semua materi termin 1</li>
+              <li>Bonus akses termin 2 (saat rilis)</li>
+              <li>Grup diskusi</li>
+            </ul>
+            <button class="btn priceCard__btn" data-package="Bundle Termin 1–2" data-price="150000">Checkout
+              Bundle</button>
+          </article>
+        </div>
+
+        <p class="tiny muted reveal" style="margin-top:14px">
+          Catatan: Termin 2 akan tersedia Maret 2026 (sesuai pengumuman di atas).
+        </p>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section" id="testimoni">
+      <div class="container">
+        <div class="sectionHead reveal">
+          <h2>Kata mereka</h2>
+          <p class="muted">Pengalaman peserta yang merasa terbantu dengan format e-learning.</p>
+        </div>
+
+        <div class="carousel reveal" aria-label="Testimoni peserta">
+          <button class="carBtn" id="prev" aria-label="Sebelumnya">‹</button>
+
+          <div class="carViewport">
+            <div class="carTrack" id="track">
+              <article class="quote">
+                <div class="quote__head">
+                  <img class="avatar" src="assets/testi-alfian.jpg" alt="Foto Alfian Qotrunnada" loading="lazy">
+                  <div class="quote__meta">
+                    <div class="quote__name">Alfian Qotrunnada</div>
+                    <div class="quote__role">Peserta</div>
+                  </div>
+                </div>
+                <p>“Materinya dijelaskan dengan bahasa yang ringan, jadi lebih paham. Sistemnya enak banget buat yang
+                  jadwalnya padat.”</p>
+                <div class="quote__stars">★★★★★</div>
+              </article>
+
+              <article class="quote">
+                <div class="quote__head">
+                  <img class="avatar" src="assets/testi-faisal.jpg" alt="Foto Faisal Ardi Kemas" loading="lazy">
+                  <div class="quote__meta">
+                    <div class="quote__name">Faisal Ardi Kemas</div>
+                    <div class="quote__role">Peserta</div>
+                  </div>
+                </div>
+                <p>“Metode belajar santai tapi tidak lambat. Pas untuk persiapan ujian, tinggal fokus ke rangkuman.”</p>
+                <div class="quote__stars">★★★★★</div>
+              </article>
+
+              <article class="quote">
+                <div class="quote__head">
+                  <img class="avatar" src="assets/testi-mujtaba.jpg" alt="Foto Mujtaba Hanafi" loading="lazy">
+                  <div class="quote__meta">
+                    <div class="quote__name">Mujtaba Hanafi</div>
+                    <div class="quote__role">Peserta</div>
+                  </div>
+                </div>
+                <p>“Tutor jelas, cepat nyampe. Cocok buat ngejar materi dalam waktu sempit.”</p>
+                <div class="quote__stars">★★★★★</div>
+              </article>
+            </div>
+          </div>
+
+          <button class="carBtn" id="next" aria-label="Berikutnya">›</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="daftar">
+      <div class="cta__bg" aria-hidden="true">
+        <div class="cta__blob"></div>
+        <div class="cta__grid"></div>
+      </div>
+
+      <div class="container cta__inner">
+        <div class="reveal">
+          <h2>Siap naik level termin ini?</h2>
+          <p class="muted">Free trial tersedia. Rasakan belajar yang fleksibel, jelas, dan mudah dipahami.</p>
+        </div>
+
+        <form class="form reveal delay-1" onsubmit="return false;" aria-label="Form pendaftaran">
+          <div class="form__row">
+            <label>
+              <span>Nama</span>
+              <input type="text" name="nama" placeholder="Nama lengkap" required>
+            </label>
+            <label>
+              <span>WhatsApp</span>
+              <input type="tel" name="wa" placeholder="08xxxxxxxxxx" required>
+            </label>
+          </div>
+          <label>
+            <span>Jurusan / Tingkat</span>
+            <input type="text" name="jurusan" placeholder="Contoh: Syariah Tingkat 1">
+          </label>
+
+          <button class="btn" id="submitBtn" type="submit">
+            Kirim Minat Free Trial
+          </button>
+          <p class="tiny muted">isi form untuk pendaftaran / minta akses free trial.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--alt" id="faq">
+      <div class="container">
+        <div class="sectionHead reveal">
+          <h2>Frequently Asked Questions</h2>
+          <p class="muted">Jawaban singkat untuk pertanyaan yang sering muncul.</p>
+        </div>
+
+        <div class="faq">
+          <details class="faqItem reveal">
+            <summary>Nuqthah Learning itu apa?</summary>
+            <div class="faqItem__body">
+              Nuqthah Learning adalah program bimbingan belajar muqarrar yang dibangun oleh komunitas belajar di
+              az-azhar untuk membantu mahasiswa al azhar dalam menempuh perjalanan belajar di al-azhar.
+            </div>
+          </details>
+
+          <details class="faqItem reveal delay-1">
+            <summary>Belajarnya di mana?</summary>
+            <div class="faqItem__body">
+              Online. Kamu bisa belajar lewat gadget masing-masing dari mana pun tanpa ribet.
+            </div>
+          </details>
+
+          <details class="faqItem reveal delay-2">
+            <summary>Kapan bisa mulai?</summary>
+            <div class="faqItem__body">
+              setelah pendaftaran dibuka dan melakukan pendaftaran, akses materi dikirim dan kamu bisa langsung mulai
+              belajar.
+            </div>
+          </details>
+
+          <details class="faqItem reveal">
+            <summary>Cocok buat yang sibuk?</summary>
+            <div class="faqItem__body">
+              Cocok banget. rekaman bisa diputar ulang dan kamu bisa atur ritme belajar sesuai jadwal.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontak & Legal -->
+    <section class="section" id="kontak">
+      <div class="container">
+        <div class="sectionHead reveal">
+          <h2>Kontak Bisnis</h2>
+          <p class="muted">Jika butuh bantuan atau konfirmasi pembayaran, hubungi kami lewat kanal di bawah ini.</p>
+        </div>
+
+        <div class="contactGrid">
+          <div class="contactCard reveal">
+            <h3>WhatsApp</h3>
+            <p class="muted">Respon tercepat untuk pendaftaran dan kendala akses.</p>
+            <a class="btn btn--sm" href="https://wa.me/6285185409887" target="_blank" rel="noopener">Chat Admin</a>
+          </div>
+
+          <div class="contactCard reveal delay-1">
+            <h3>Email</h3>
+            <p class="muted">Untuk kebutuhan kerja sama dan administrasi.</p>
+            <a class="btn btn--sm btn--ghost" href="mailto:nuqthahlearning@gmail.com">nuqthahlearning@gmail.com</a>
+          </div>
+
+          <div class="contactCard reveal delay-2">
+            <h3>Instagram</h3>
+            <p class="muted">Info program, update materi, dan pengumuman.</p>
+            <a class="btn btn--sm btn--ghost" href="https://www.instagram.com/nuqthah_learning?igsh=dmRxNzN4eHZrMjZt"
+              target="_blank" rel="noopener">Buka Instagram</a>
+          </div>
+        </div>
+
+        <div class="legal reveal" id="syarat" style="margin-top:22px">
+          <h3>Syarat & Ketentuan</h3>
+          <div class="legalCard">
+            <ol>
+              <li>Produk yang dijual berupa akses e-learning (video, rangkuman, dan quiz) sesuai paket yang dipilih.
+              </li>
+              <li>Setelah pembayaran berhasil, akses materi dikirim melalui WhatsApp/Email yang didaftarkan.</li>
+              <li>Akses bersifat personal (tidak boleh dibagikan) untuk menjaga kualitas layanan dan hak cipta materi.
+              </li>
+              <li>Jadwal rilis materi mengikuti pengumuman resmi di website/Instagram.</li>
+            </ol>
+          </div>
+
+          <h3 id="refund" style="margin-top:18px">Kebijakan Pengembalian Dana</h3>
+          <div class="legalCard">
+            <p class="muted" style="margin-top:0">
+              Karena produk berupa akses digital, pengembalian dana umumnya <b>tidak tersedia</b> setelah akses
+              diberikan.
+              Namun, kami tetap membantu jika terjadi masalah teknis.
+            </p>
+            <ul>
+              <li><b>Refund bisa dipertimbangkan</b> bila pembayaran terdebit namun akses tidak terkirim & belum
+                dipakai,
+                dalam 1×24 jam.</li>
+              <li><b>Alternatif refund</b>: penjadwalan ulang / penggantian akses bila ada kendala sistem.</li>
+              <li>Ajukan melalui WhatsApp dengan bukti pembayaran + nama/nomor yang didaftarkan.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__left">
+          <div class="brand brand--footer">
+            <span class="logo" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="2" width="38" height="38" rx="12" fill="url(#g2)" />
+                <path
+                  d="M21 11.5c-4.7 0-8.5 3.8-8.5 8.5S16.3 28.5 21 28.5 29.5 24.7 29.5 20 25.7 11.5 21 11.5Zm0 14.1a5.6 5.6 0 1 1 0-11.2 5.6 5.6 0 0 1 0 11.2Z"
+                  fill="white" opacity=".92" />
+                <circle cx="28.8" cy="28.7" r="2.7" fill="white" opacity=".92" />
+                <defs>
+                  <linearGradient id="g2" x1="2" y1="2" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#0EA5A4" />
+                    <stop offset="1" stop-color="#F59E0B" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </span>
+            <span class="brand__text">
+              <span class="brand__name">Nuqthah</span>
+              <span class="brand__sub">Learning</span>
+            </span>
+          </div>
+
+          <p class="muted footer__desc">© <span id="year"></span> Nuqthah Learning. All rights reserved.</p>
+        </div>
+
+        <div class="footer__right">
+          <a class="social" href="https://www.instagram.com/nuqthah_learning?igsh=dmRxNzN4eHZrMjZt"
+            aria-label="Instagram">Instagram</a>
+          <a class="social" href="#" aria-label="TikTok">TikTok</a>
+          <a class="social" href="https://www.youtube.com/@NUQTHAHLEARNINGCENTER" aria-label="YouTube">YouTube</a>
+          <a class="social" href="mailto:nuqthahlearning@gmail.com" aria-label="Email">Email</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a class="wa" href="https://wa.me/6285185409887" target="_blank" rel="noopener">
+      <span class="wa__icon">💬</span>
+      <span class="wa__text">Chat Admin</span>
+    </a>
+
+  </main>
+
+  <!-- Checkout Modal -->
+  <div class="modal" id="checkout" aria-hidden="true" role="dialog" aria-label="Checkout">
+    <div class="modal__backdrop" data-close="1"></div>
+    <div class="modal__panel" role="document">
+      <button class="modal__close" aria-label="Tutup" data-close="1">×</button>
+      <h3 style="margin:0 0 6px">Checkout</h3>
+      <p class="muted" style="margin:0 0 14px">Pastikan data benar. Pembayaran menggunakan IDR.</p>
+
+      <div class="summary">
+        <div class="row">
+          <span>Paket</span>
+          <b id="sumPkg">—</b>
+        </div>
+        <div class="row">
+          <span>Total</span>
+          <b><span class="cur">IDR</span> <span id="sumTotal">0</span></b>
+        </div>
+      </div>
+
+      <form class="modalForm" id="checkoutForm">
+        <label>
+          <span>Nama</span>
+          <input type="text" name="nama" placeholder="Nama lengkap" required>
+        </label>
+        <label>
+          <span>WhatsApp</span>
+          <input type="tel" name="wa" placeholder="08xxxxxxxxxx" required>
+        </label>
+        <input type="hidden" name="paket" id="paketInput" value="">
+        <input type="hidden" name="harga" id="hargaInput" value="0">
+
+        <div class="modal__actions">
+          <button type="button" class="btn btn--ghost" data-close="1">Batal</button>
+          <button type="submit" class="btn" id="payBtn">Bayar Sekarang</button>
+        </div>
+        <p class="tiny muted" style="margin-top:10px">
+          Tombol akan memunculkan Snap popup (token).
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Midtrans Snap -->
+  <script src="https://app.sandbox.midtrans.com/snap/snap.js" data-client-key="Mid-client-QzcjGlEmaHlfZ81K"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
